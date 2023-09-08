@@ -41,7 +41,7 @@ export const PATCH = async (req, { params }) => {
   }
 }
 
-export const DELTE = async (req, { params }) => {
+export const DELETE = async (req, { params }) => {
   const taskDeleted = await prisma.task.delete({
     where: {
       id: Number(params.id)
